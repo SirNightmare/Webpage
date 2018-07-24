@@ -30,6 +30,11 @@ html, body {
   transform: translateY(-50%);
 }
 
+.webhook {
+  width: 300px;
+  height: 150px;
+}
+
 
 
 
