@@ -35,6 +35,61 @@ html, body {
   height: 150px;
 }
 
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: .5em;
+  color: #383a42;
+  background: inherit;
+}
+code {
+  padding: 2px 4px;
+}
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+user agent stylesheet
+tt, code, kbd, samp {
+  font-family: monospace;
+}
+#home .info-item pre {
+  padding: 8px;
+  border-radius: 4px;
+  text-align: left;
+  font-size: .875rem;
+  background: #f0f0f0;
+}
+pre {
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  white-space: pre-wrap;
+}
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+user agent stylesheet
+pre, xmp, plaintext, listing {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0px;
+}
+.hljs-doctag, .hljs-formula, .hljs-keyword {
+  color: #a626a4;
+}
+.hljs-built_in, .hljs-class .hljs-title {
+  color: #c18401;
+}
+.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string {
+  color: #50a14f;
+}
+.hljs-doctag, .hljs-formula, .hljs-keyword {
+  color: #a626a4;
+}
+
 
 
 

@@ -3,12 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Leafeon | About</title>
+	<title>Leafeon | Code</title>
 	<link rel="icon" href="https://cdn.glitch.com/00b11ad6-e170-41e1-8dcb-6d96f1498965%2Fchibi_leafeon_by_seviyummy-d9zoc16.png?1530036171937">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" async=""></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
 </head>
@@ -32,15 +33,14 @@
 					<li class="nav-item">
 							<a class="nav-link" href="partnered.html">Partnered</a>
 						</li>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="code.html">Code Examples</a>
-					</li>
 						<li class="nav-item active">
+							<a class="nav-link" href="code.html">Code Examples</a>
+						</li>
+						<li class="nav-item">
 								<a class="nav-link" href="about.html">About</a>
 							</li>
 		</ul>
-	</div>
+    </div>
 </div>
 </nav>
 
@@ -74,23 +74,38 @@
 					<img src="img/download3.png">
 					<div class="carousel-caption">
 						</div>
-				</div>
+                </div>
 </div>
 </div>
 
-<div class="container-fluid padding">
-        <div class="row welcome text-center">
-                <div class="col-12">
-                        <h1 class="display-4">About</h1>
-                        <hr>
-                        <p class="lead">Leafeon was made by me, MrNightmare_#2016 but some people know me as Oliver. Leafeon was programmed on the 9th June 2018.
-                            I was self taught on how to code JavaScript and HTML with some help of YouTube. My hobbies are Coding/Programming, Playing out with my friends and helping others.
-                            I live in England and I speak multiple languages like English, German and Portugeese. My ambition is to encourage others to code and thats why i made Leafeon and Sylveon.
-                            I hope you know much more about me now and im looking forward to seeing some of you guys on the support server.
-                            </p>
-                        </div>
-</div>
-      
-
+<h1 class="display4">Discord.js Getting Started</h1>
+<hr>
+<pre><code class="javascript hljs"><span class="hljs-keyword">const</span> Discord = <span class="hljs-built_in">require</span>(<span class="hljs-string">'discord.js'</span>);
+	<span class="hljs-keyword">const</span> bot = <span class="hljs-keyword">new</span> Discord.Client();
+	
+	bot.on(<span class="hljs-string">'ready'</span>, () =&gt; {
+	  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Logged in as <span class="hljs-subst">${client.user.tag}</span>!`</span>);
+	});
+	
+	bot.on(<span class="hljs-string">'message'</span>, message =&gt; {
+	  <span class="hljs-keyword">if</span> (message.content === <span class="hljs-string">'ping'</span>) {
+		message.reply(<span class="hljs-string">'Pong!'</span>);
+	  }
+	});
+	
+	bot.login(<span class="hljs-string">'TOKEN HERE'</span>);</code></pre>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
